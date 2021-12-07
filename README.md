@@ -17,8 +17,8 @@ This script demonstrates the use of MyAlgoConnect for transaction signing. The p
 
 # Commands:
  - npm init -y
- - npm install -g browserify
-   - browserify index.js -o browserified.js
+ - sudo npm install -g browserify
+   - sudo browserify index.js -o browserified.js
      - instead of the index.js, the generated browserified.js file is what you'll embed in your index.html
  - npm install algosdk
  - npm install @randlabs/myalgo-connect

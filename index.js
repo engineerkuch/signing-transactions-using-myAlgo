@@ -17,7 +17,7 @@ document.getElementById('create-account').onclick = () => {
     createAccount()
 }
 
-let connection =  async () => {
+async function connection() {
     const node_connection_status = await client.status().do()
     console.log(node_connection_status)
 }

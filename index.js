@@ -76,16 +76,11 @@ async function payment() {
         let signedTxn = await myAlgoWallet.signTransaction(txn.toByte())
         let txId = txn.txID().toString();
         console.log(typeof(signedTxn))
-        console.log((signedTxn.length))
-        console.log("Signed transaction with txID: %s", txId);
-        console.log("signedTxn ==> ", signedTxn)
         await client.sendRawTransaction(signedTxn.blob).do();
 
         // Wait for confirmation
         let confirmedTxn = await waitForConfirmation(client, txId, 4);
         console.log("Transaction " + txId + " confirmed in round " + confirmedTxn["confirmed-round"]);
-        var string = new TextDecoder().decode(confirmedTxn.txn.txn.note);
-        console.log("Note field: ", string);
         console.log("[+] Done");
     }
     catch (e) {
@@ -114,6 +109,7 @@ async function assetTransfer() {
 
         let signedTxn = await myAlgoWallet.signTransaction(txn2.toByte())
         await client.sendRawTransaction(signedTxn.blob).do()
+        console.log("[+] Done");
       } catch (e) {
         console.error(`[!] asset transfer failed. ${e}`);
       }

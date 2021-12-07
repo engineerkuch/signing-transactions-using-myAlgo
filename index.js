@@ -10,23 +10,12 @@ const client = new algosdk.Algodv2(token, server, port);
 
 
 document.getElementById('connection-status').onclick = () => {
-    connectionStatus()
+    connection()
 }
 
 document.getElementById('create-account').onclick = () => {
     createAccount()
 }
-
-async function connection() {
-    const node_connection_status = await client.status().do()
-    console.log(node_connection_status)
-}
-
-function connectionStatus() {
-    console.log('connection status: ')
-    connection()
-}
-
 
 document.getElementById('payment').onclick = () => {
     payment()
@@ -34,6 +23,16 @@ document.getElementById('payment').onclick = () => {
 
 document.getElementById('asset-transfer').onclick = () => {
     assetTransfer()
+}
+
+async function connection() {
+    console.log('connection status: ')
+    try {
+        const node_connection_status = await client.status().do()
+        console.log(node_connection_status)
+    } catch (e) {
+        console.error(`[!] conntection failed. ${e}`)
+    }
 }
 
 async function payment() {

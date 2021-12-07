@@ -13,10 +13,6 @@ document.getElementById('connection-status').onclick = () => {
     connection()
 }
 
-document.getElementById('create-account').onclick = () => {
-    createAccount()
-}
-
 document.getElementById('payment').onclick = () => {
     payment()
 }

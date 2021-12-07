@@ -22,3 +22,6 @@ This script demonstrates the use of MyAlgoConnect for transaction signing. The p
      - instead of the index.js, the generated browserified.js file is what you'll embed in your index.html
  - npm install algosdk
  - npm install @randlabs/myalgo-connect
+
+
+### To see the outputs, use the browser's console (in case you don't already know :-|) 

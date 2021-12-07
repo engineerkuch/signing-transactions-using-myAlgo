@@ -1,0 +1,23 @@
+{
+  "name": "risquefans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@randlabs/myalgo-connect": "^1.1.1",
+    "algosdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "browserify": "^17.0.0",
+    "console": "^0.7.2",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  }
+}

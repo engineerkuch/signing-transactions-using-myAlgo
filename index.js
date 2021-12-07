@@ -25,14 +25,6 @@ document.getElementById('create-account').onclick = () => {
     }
 }
 
-document.getElementById('payment').onclick = () => {
-    try {
-        payment()
-    } catch (e) {
-        console.error(`[!] payment error: ${e}`)
-    }
-}
-
 let connection =  async () => {
     const node_connection_status = await client.status().do()
     console.log(node_connection_status)

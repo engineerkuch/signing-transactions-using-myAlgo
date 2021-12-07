@@ -10,19 +10,11 @@ const client = new algosdk.Algodv2(token, server, port);
 
 
 document.getElementById('connection-status').onclick = () => {
-    try {
-        connectionStatus()
-    } catch (e) {
-        console.error(`[!] connection error: ${e}`)
-    }
+    connectionStatus()
 }
 
 document.getElementById('create-account').onclick = () => {
-    try {
-        createAccount()
-    } catch (e) {
-        console.log("[!] error creating account: ", e)
-    }
+    createAccount()
 }
 
 let connection =  async () => {
@@ -37,19 +29,11 @@ function connectionStatus() {
 
 
 document.getElementById('payment').onclick = () => {
-    try {
-        payment()
-    } catch (e) {
-        console.error(`[!] payment error: ${e}`)
-    }
+    payment()
 }
 
 document.getElementById('asset-transfer').onclick = () => {
-    try {
-        assetTransfer()
-    } catch (e) {
-        console.error(`[!] asset transfer error: ${e}`)
-    }
+    assetTransfer()
 }
 
 async function payment() {

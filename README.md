@@ -5,7 +5,7 @@ This script demonstrates the use of MyAlgoConnect for transaction signing. The p
 
 ## Prerequisites/Requirements:
  - You must set up an account with [My Algo](https://wallet.myalgo.com/).
- - You're connected to the network by either [running a node](https://developer.algorand.org/docs/run-a-node/setup/install/?from_query=running%20a%20node#debian-based-distributions-debian-ubuntu-linux-mint), or by using a third party API (for instance, [Pure Stake](https://developer.purestake.io/). I use the former.
+ - You're connected to the network by either [running a node](https://developer.algorand.org/docs/run-a-node/setup/install/?from_query=running%20a%20node#debian-based-distributions-debian-ubuntu-linux-mint), or by using a third party API (for instance, [Pure Stake](https://developer.purestake.io/).
  - Two funded Algorand accounts.
  - An asset to transfer. 
    - Before an asset can be transfered, the receiving account must first opt-in. Please visit [Algorand's Developer Portal](https://developer.algorand.org/docs/get-details/asa/?from_query=ASA#create-publication-overlay) to learn more about ASAs.
